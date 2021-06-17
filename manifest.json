@@ -1,0 +1,20 @@
+{
+  "short_name": "MD Gaziur Rahman Noor's Portfolio",
+  "name": "MD Gaziur Rahman Noor's Portfolio",
+  "icons": [
+    {
+      "src": "me.jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "me.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
