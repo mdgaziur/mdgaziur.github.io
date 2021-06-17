@@ -8,14 +8,16 @@ type ProjectCardProps = {
 export function ProjectCard({ name, smallDesc, image, repo }: ProjectCardProps) {
   return (
     <div
-      className="w-72 sm:p-5 p-2.5 h-96 flex flex-col justify-center items-center sm:ml-5 mt-5 first:ml-0 1th rounded-lg"
+      className="sm:p-5 p-2.5 flex flex-col justify-center items-center sm:ml-5 mt-5 first:ml-0 1th rounded-lg"
       style={{
         background: "#101010",
+        width: "290px",
+        height: "400px"
       }}
     >
       <img src={image} alt={name+" logo"} className="w-28 mb-10" />
       <div>
-        <h1 className="sm:text-3xl text-2xl m-0 p-0 text-white text-center subpixel-antialiased font-semibold">
+        <h1 className="sm:text-2xl text-xl m-0 p-0 text-white text-center subpixel-antialiased font-semibold">
           {name}
         </h1>
         <p className="text-center sm:mt-5 text-white antialiased p-0">
