@@ -9,7 +9,7 @@ import { ProjectCard } from "./ProjectCard";
 export function Projects() {
   return (
     <div
-      className="pt-20"
+      className="pt-20 max-w-7xl"
       id="projects"
     >
       <h1 className="sm:text-6xl text-3xl text-center font-semibold antialiased text-white">

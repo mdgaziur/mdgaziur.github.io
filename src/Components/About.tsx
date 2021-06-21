@@ -3,7 +3,7 @@ import Me from "../me.jpeg";
 export function About() {
   return (
     <div
-      className="sm:h-screen pt-20"
+      className="sm:h-screen pt-20 max-w-7xl"
       id="about"
     >
       <h1 className="sm:text-6xl text-3xl text-center font-semibold antialiased text-white">

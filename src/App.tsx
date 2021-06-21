@@ -7,7 +7,7 @@ import { Introduction } from './Components/Introduction';
 
 function App() {
   return (
-    <div className="App h-screen overflow-y-scroll scroll" style={{
+    <div className="App h-screen overflow-y-scroll scroll grid place-items-center" style={{
       scrollBehavior: 'smooth'
     }}>
       <Header />

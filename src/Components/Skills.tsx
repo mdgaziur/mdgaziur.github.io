@@ -91,7 +91,7 @@ export function Skills() {
           <img
             src={ArchLinux}
             alt="Arch Linux"
-            className="sm:w-28 w-12 m-5"
+            className="sm:w-28 w-14 m-5"
             title="Arch Linux"
           ></img>
           <img
