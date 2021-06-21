@@ -87,11 +87,11 @@ export function Skills() {
           OS
         </h1>
         
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap items-center">
           <img
             src={ArchLinux}
             alt="Arch Linux"
-            className="sm:w-28 w-14 m-5"
+            className="sm:w-20 sm:h-20 w-10 h-10 m-5"
             title="Arch Linux"
           ></img>
           <img

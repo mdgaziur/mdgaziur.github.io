@@ -1,7 +1,7 @@
 export function Introduction() {
   return (
     <div
-      className="flex flex-col justify-center items-center sm:m-0 h-screen w-full"
+      className="flex flex-col justify-center items-center sm:m-0 min-h-screen w-full"
       id="introduction"
     >
       <div className="p-5">
@@ -12,7 +12,7 @@ export function Introduction() {
           <h1 className="sm:text-7xl text-6xl font-semibold text-white antialiased">
             MD Gaziur Rahman Noor
           </h1>
-          <sup className="italic text-sm text-gray-400 font-mono mt-2">
+          <sup className="z-0 relative italic text-sm text-gray-400 font-mono mt-2">
             I use Arch BTW
           </sup>
         </div>
