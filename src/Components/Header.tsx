@@ -4,7 +4,7 @@ export function Header() {
   let [sidebarVisible, setSideBarVisible] = useState(false);
 
   return (
-    <header className="flex bg-black p-2 fixed w-full justify-between content-center z-50">
+    <header className="flex bg-black p-2 fixed w-full justify-between content-center top-0 z-50">
       <h3 className="antialiased p-0 m-2 inline-block text-gray-500 font-mono">
         mdgaziur001
       </h3>

@@ -19,8 +19,6 @@ export function About() {
             I started programming in 2017. I was 11 years old then 😅. Nowadays, I do programming at least
             4 hours.
           </p>
-          <h3 className="text-white mt-10 text-2xl font-semibold subpixel-antialiased">My Wakatime Statistics 😅</h3>
-          <iframe className="sm:h-56 sm:w-96" title="wakatime activity" src="https://github-readme-stats.vercel.app/api/wakatime?username=mdgaziur001&theme=dark&layout=compact"></iframe>
         </div>
       </div>
     </div>
