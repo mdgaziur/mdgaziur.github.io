@@ -19,15 +19,6 @@ export function Introduction() {
         <h2 className="sm:text-5xl text-2xl text-gray-400 font-semibold antialiased mt-5">
           Muslim. Programmer. Student
         </h2>
-        <h3 className="sm:text-4xl text-2xl font-semibold text-white antialiased mt-4">
-          Maintainer of{" "}
-          <a
-            className="font-semibold antialiased underline text-green-500"
-            href="https://github.com/CodeMountainOJ/CodeMountain"
-          >
-            CodeMountainOJ
-          </a>
-        </h3>
       </div>
     </div>
   );
