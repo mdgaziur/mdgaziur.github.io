@@ -1,0 +1,52 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(7, calc(100% / 7 - 2px));
+    grid-auto-rows: 400px;
+    grid-auto-flow: dense;
+    grid-gap: 2px;
+    background: black;
+    padding: 2px 0;
+}
+
+.nav {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+.nav-visible {
+    top: 0;
+}
+
+.nav-invisible {
+    top: -100vh;
+}
+
+@keyframes nav-invisible-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-5deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .projects-grid {
+        display: block;
+        padding: 0.1px 0;
+
+        .repo-card {
+            margin: 2px;
+        }
+    }
+}

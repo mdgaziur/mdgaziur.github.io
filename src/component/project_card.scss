@@ -1,0 +1,8 @@
+.repo-link {
+    transition: 200ms;
+
+    &:hover {
+        background: #050505;
+        border-radius: 50%;
+    }
+}
