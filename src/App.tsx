@@ -16,8 +16,8 @@ function App() {
                 <div className="grid gap-5">
                     <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="/">Main</a>
                     <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="#about">About Me</a>
-                    <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="#skills">Skills</a>
                     <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="#projects">Projects</a>
+                    <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="#skills">Skills</a>
                     <a className="sm:text-7xl text-5xl font-extrabold tracking-tighter hover:text-zinc-300 transition-all" onClick={() => setIsNavVisible(false)} href="#contact">Contact Me</a>
                 </div>
             </nav>
