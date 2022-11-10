@@ -60,12 +60,6 @@ function App() {
                                  colspan="col-span-4"
                                  tech="Rust Actix-Web Svelte SCSS TailwindCSS"
                     ></ProjectCard>
-                    <ProjectCard name="Rig Language" repo="mdgaziur/riglang"
-                                 status="Under development"
-                                 description="Statically typed imperative scripting language"
-                                 colspan="col-span-2"
-                                 tech="Rust"
-                    ></ProjectCard>
                     <ProjectCard name="YAL Language" repo="mdgaziur/yal"
                                  status="Almost finished"
                                  description="YAL is Yet Another scripting Language(but worse)"
