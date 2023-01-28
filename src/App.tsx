@@ -56,13 +56,13 @@ function App() {
                                  tech="Rust GTK3"
                     ></ProjectCard>
                     <ProjectCard name="NerdTree Website" repo="nerdtree-org/nerdtree"
-                                 status="Under development"
+                                 status="Maintained"
                                  description="Web infrastructure for NerdTree"
                                  colspan="col-span-4"
                                  tech="Rust Actix-Web Svelte SCSS TailwindCSS"
                     ></ProjectCard>
                     <ProjectCard name="YAL Language" repo="mdgaziur/yal"
-                                 status="Almost finished"
+                                 status="Done"
                                  description="YAL is Yet Another scripting Language(but worse)"
                                  colspan="col-span-2"
                                  tech="Rust"
