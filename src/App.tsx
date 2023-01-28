@@ -38,7 +38,7 @@ function App() {
                     modern technology and making cool websites.
                     <br/>
                     <br/>
-                    Current status: Preparing for College
+                    Current status: Busy studying
                 </p>
             </div>
             <div id="projects" className="bg-indigo-900">
@@ -70,7 +70,7 @@ function App() {
                     <ProjectCard name="FerricOxide OS" repo="mdgaziur/ferricoxide-os"
                                  status="Under development"
                                  description="Operating system made for learning purpose"
-                                 colspan="col-span-3"
+                                 colspan="col-span-5"
                                  tech="Rust"
                     ></ProjectCard>
                 </div>
