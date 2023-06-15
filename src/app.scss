@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+	font-family: Manrope, sans-serif;
+	font-weight: 800;
+	font-size: min(5rem, 400%);
+}
+
+button,
+span {
+	font-family: 'Manrope', sans-serif;
+}
+
+// hack to prevent dead css code elimination by postcss
+.nav-transition.active {
+	left: 0 !important;
+}
+
+.secondary-content-container.active {
+	margin-left: 0!important;
+}
