@@ -74,9 +74,9 @@
 		<section class="h-screen flex items-center" id="Intro">
 			<div class="sm:block hidden">
 				<div class="[writing-mode:vertical-rl] h-full flex justify-center items-center gap-5">
-					<div class="[height:40%] w-0.5 [background:rgba(255,255,255,0.30)]" />
-					<span class="[color:rgba(255,255,255,0.30)] font-extrabold">Scroll down</span>
-					<div class="[height:40%] w-0.5 [background:rgba(255,255,255,0.30)]" />
+					<div class="[height:40%] w-0.5 [background:rgba(255,255,255,0.73)]" />
+					<span class="[color:rgba(255,255,255,0.73)] font-extrabold">Scroll down</span>
+					<div class="[height:40%] w-0.5 [background:rgba(255,255,255,0.73)]" />
 				</div>
 			</div>
 			<div class="flex items-center justify-center flex-1">
@@ -261,12 +261,12 @@
 		font-weight: 600;
 		letter-spacing: -0.025em;
 
-		color: #707070;
+		color: #c0c0c0;
 		mix-blend-mode: color-dodge;
 	}
 
 	.stat-container {
-		color: #6c6c6c;
+		color: #c0c0c0;
 		mix-blend-mode: color-dodge;
 	}
 
@@ -333,7 +333,7 @@
 
 	#intro-text-special-1 {
 		letter-spacing: -0.06em;
-		color: rgba(236, 236, 236, 0.48);
+		color: rgba(236, 236, 236, 0.68);
 		mix-blend-mode: color-dodge;
 	}
 
@@ -342,7 +342,7 @@
 		letter-spacing: -0.06em;
 		color: transparent;
 
-		background: linear-gradient(93.5deg, #b7b7b7 -2.55%, rgba(98, 98, 98, 0.39) 124.99%);
+		background: linear-gradient(93.5deg, #b7b7b7 -2.55%, rgba(98, 98, 98, 0.89) 124.99%);
 		background-clip: text;
 		mix-blend-mode: color-dodge;
 
@@ -358,15 +358,15 @@
 	.section-title {
 		font-weight: 700;
 		letter-spacing: -0.055em;
-		color: #777777;
+		color: #c0c0c0;
 		mix-blend-mode: color-dodge;
 	}
 
 	.links {
 		a {
 			padding: 2em;
-			border: 1px solid #777777;
-			color: #777777;
+			border: 1px solid #c0c0c0;
+			color: #c0c0c0;
 			mix-blend-mode: color-dodge;
 			font-weight: 700;
 			transition: color, border-color 200ms;
@@ -380,17 +380,17 @@
 
 	.skill {
 		svg {
-			fill: #777777;
+			fill: #c0c0c0;
 
 			@apply h-20;
 		}
 
 		span {
-			color: #777777;
+			color: #c0c0c0;
 		}
 
 		mix-blend-mode: color-dodge;
-		border: 1px solid #777777;
+		border: 1px solid #c0c0c0;
 
 		@apply p-2;
 		@apply sm:p-5;
