@@ -261,12 +261,12 @@
 		font-weight: 600;
 		letter-spacing: -0.025em;
 
-		color: #c0c0c0;
+		color: #ffffff;
 		mix-blend-mode: color-dodge;
 	}
 
 	.stat-container {
-		color: #c0c0c0;
+		color: #ffffff;
 		mix-blend-mode: color-dodge;
 	}
 
@@ -342,7 +342,7 @@
 		letter-spacing: -0.06em;
 		color: transparent;
 
-		background: linear-gradient(93.5deg, #b7b7b7 -2.55%, rgba(98, 98, 98, 0.89) 124.99%);
+		background: linear-gradient(93.5deg, #e8e8e8 -2.55%, rgb(213 213 213) 124.99%);
 		background-clip: text;
 		mix-blend-mode: color-dodge;
 
@@ -358,39 +358,39 @@
 	.section-title {
 		font-weight: 700;
 		letter-spacing: -0.055em;
-		color: #c0c0c0;
+		color: #ffffff;
 		mix-blend-mode: color-dodge;
 	}
 
 	.links {
 		a {
 			padding: 2em;
-			border: 1px solid #c0c0c0;
-			color: #c0c0c0;
+			border: 1px solid #ffffff;
+			color: #ffffff;
 			mix-blend-mode: color-dodge;
 			font-weight: 700;
 			transition: color, border-color 200ms;
 
 			&:hover {
-				color: #cccccc;
-				border-color: #cccccc;
+				color: #f0f0f0;
+				border-color: #f0f0f0;
 			}
 		}
 	}
 
 	.skill {
 		svg {
-			fill: #c0c0c0;
+			fill: #ffffff;
 
 			@apply h-20;
 		}
 
 		span {
-			color: #c0c0c0;
+			color: #ffffff;
 		}
 
 		mix-blend-mode: color-dodge;
-		border: 1px solid #c0c0c0;
+		border: 1px solid #ffffff;
 
 		@apply p-2;
 		@apply sm:p-5;
