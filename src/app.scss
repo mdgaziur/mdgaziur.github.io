@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
-	scrollbar-width: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 h1 {
-	font-family: Playfair Display, serif;
-	font-weight: 800;
-	font-size: min(5rem, 400%);
-	color: #bbbbbb;
+    font-family: Playfair Display, serif;
+    font-weight: 800;
+    font-size: min(5rem, 400%);
+    color: #bbbbbb;
 }
 
 button,
 span {
-	font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 // hack to prevent dead css code elimination by postcss
 .nav-transition.active {
-	left: 0 !important;
+    left: 0 !important;
 }
 
 .invisible {
-	display: none !important;
+    display: none !important;
 }
