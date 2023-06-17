@@ -105,7 +105,7 @@
 					</tr>
 					<tr class="md:table-row flex flex-wrap">
 						<td class="p-1 stat md:text-6xl text-3xl font-semibold">50k+</td>
-						<td class="p-1 md:text-2xl text-xl font-semibold">hours spent by coding</td>
+						<td class="p-1 md:text-2xl text-xl font-semibold">lines of code written</td>
 					</tr>
 					<tr class="md:table-row flex flex-wrap">
 						<td class="p-1 stat md:text-6xl text-3xl font-semibold">1000+</td>
