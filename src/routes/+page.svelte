@@ -300,9 +300,7 @@
     }
 
     .main-container {
-        background: #212121 url(/intro-bg.png) fixed;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background: #212121;
         position: relative;
     }
 
