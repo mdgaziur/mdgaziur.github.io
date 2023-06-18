@@ -37,11 +37,11 @@
                         .querySelector(`#${nav_link.getAttribute('data-nav')}`)
                         .classList.remove('invisible');
                     nav_link.classList.add('active');
-                }, 1300);
+                }, 800);
 
                 previous_nav_timer2 = setTimeout(() => {
                     nav_transition_divs.forEach((el) => el.classList.remove('active'));
-                }, 1300);
+                }, 800);
             });
         }
     });
