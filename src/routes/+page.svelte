@@ -282,10 +282,11 @@
 
     .stat-container {
         color: #cecece;
-        font-family: 'Playfair Display Italic', serif;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
 
         .stat {
-            font-weight: 800;
+            font-weight: 500;
         }
     }
 
