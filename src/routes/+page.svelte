@@ -250,13 +250,23 @@
         </section>
     </div>
     <nav
-        class="md:[writing-mode:vertical-lr] sticky top-0 flex-wrap items-center justify-between pb-5 md:pt-0 md:pb-0 pt-5 font-extrabold flex [gap:20px]"
+        class="sticky top-0 flex-wrap sm:flex-col items-center justify-between pb-5 md:pt-0 md:pb-0 pt-5 font-extrabold flex [gap:20px]"
     >
-        <button class="nav-link active" data-nav="Intro">Intro</button>
-        <button class="nav-link" data-nav="About">About</button>
-        <button class="nav-link" data-nav="Projects">Projects</button>
-        <button class="nav-link" data-nav="Skills">Skills</button>
-        <button class="nav-link" data-nav="Links">Links</button>
+        <button class="nav-link active" data-nav="Intro"
+            ><span class="md:[writing-mode:vertical-rl]">Intro</span></button
+        >
+        <button class="nav-link" data-nav="About"
+            ><span class="md:[writing-mode:vertical-rl]">About</span></button
+        >
+        <button class="nav-link" data-nav="Projects"
+            ><span class="md:[writing-mode:vertical-rl]">Projects</span></button
+        >
+        <button class="nav-link" data-nav="Skills"
+            ><span class="md:[writing-mode:vertical-rl]">Skills</span></button
+        >
+        <button class="nav-link" data-nav="Links"
+            ><span class="md:[writing-mode:vertical-rl]">Links</span></button
+        >
     </nav>
 </div>
 
