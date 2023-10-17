@@ -244,7 +244,7 @@
                 <a class="text-xl flex-1" href="https://facebook.com/real.mdgaziur.rahmannoor"
                     >Facebook</a
                 >
-                <a class="text-xl flex-1" href="https://twitter.com/mdgaziurrahman7">Twitter</a>
+                <a class="text-xl flex-1" href="https://twitter.com/mdgaziur001">Twitter</a>
                 <a class="text-xl flex-1" href="mailto:mdgaziurrahmannoor@gmail.com">Email</a>
             </div>
         </section>
