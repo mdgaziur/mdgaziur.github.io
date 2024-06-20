@@ -5,9 +5,9 @@
 </script>
 
 <button
-	class={`flex items-center gap-3 sm:block sm:p-4 p-2 sm:rounded-lg${is_selected ? ' nav-button-active' : ''} transition-colors`}
+	class={`flex items-center gap-3 sm:block sm:p-4 p-5 border-t-[1px] border-b-[1px] sm:border-l-[1px] sm:border-r-[1px] sm:rounded-lg${is_selected ? ' border-white/[0.11] nav-button-active' : ' border-transparent'} transition-colors`}
 	on:click={on_click}
 >
 	<slot />
-	<span class="sm:hidden" style={`color: ${is_selected ? `#1D1D1D` : `#AFD6F6`}`}>{text}</span>
+	<span class="sm:hidden text-[#AFD6F6]">{text}</span>
 </button>
