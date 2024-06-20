@@ -80,7 +80,7 @@
 		let scroll_reveal = ScrollReveal({ distance: '150px', origin: 'bottom', reset: true });
 
 		scroll_reveal.reveal(
-			'#about h1, #about img, #about p, #education h1, #achievements h1, #skills h1, #projects h1',
+			'#about h1, #education h1, #achievements h1, #skills h1, #projects h1',
 			{
 				container: '#content',
 				viewFactor: 0.3,
@@ -88,6 +88,22 @@
 				origin: 'left'
 			}
 		);
+
+		scroll_reveal.reveal("#about img", {
+			container: '#content',
+			viewFactor: 0.3,
+			delay: 100,
+			duration: 500,
+			scale: 0.2
+		});
+
+		scroll_reveal.reveal("#about p", {
+			container: '#content',
+			viewFactor: 0.3,
+			delay: 200,
+			duration: 500,
+			scale: 0.2
+		});
 
 		document.querySelectorAll('.education-card')?.forEach((card, idx) => {
 			scroll_reveal.reveal(card, {
