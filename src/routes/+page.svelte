@@ -26,7 +26,8 @@
 
 				should_move_container =
 					(last_touch_pos >= (window.visualViewport?.width ?? 650) * 0.8 && !is_nav_closed) ||
-					(last_touch_pos <= (window.visualViewport?.width ?? 650) * 0.2 && nav.style.right != "0px");
+					(last_touch_pos <= (window.visualViewport?.width ?? 650) * 0.2 &&
+						nav.style.right != '0px');
 			}
 		});
 
@@ -75,14 +76,17 @@
 			});
 		});
 
-		let scroll_reveal = ScrollReveal({ distance: "50px", origin: "bottom", reset: true });
+		let scroll_reveal = ScrollReveal({ distance: '50px', origin: 'bottom', reset: true });
 
-		scroll_reveal.reveal('#about h1, #about img, #about p, #education h1, #achievements h1, #projects h1', {
-			container: '#content',
-			viewFactor: 0.3,
-			duration: 500,
-			scale: 0.3
-		});
+		scroll_reveal.reveal(
+			'#about h1, #about img, #about p, #education h1, #achievements h1, #projects h1',
+			{
+				container: '#content',
+				viewFactor: 0.3,
+				duration: 500,
+				scale: 0.3
+			}
+		);
 
 		document.querySelectorAll('.education-card')?.forEach((card, idx) => {
 			scroll_reveal.reveal(card, {
@@ -151,10 +155,7 @@
 </script>
 
 <div class="sm:flex w-full overflow-y-hidden">
-	<button
-		class="sm:hidden absolute flex flex-col gap-1 top-10 left-10 z-10"
-		on:click={show_nav}
-	>
+	<button class="sm:hidden absolute flex flex-col gap-1 top-10 left-10 z-10" on:click={show_nav}>
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
