@@ -150,7 +150,7 @@
 	}
 </script>
 
-<div class="sm:flex sm:h-screen w-full overflow-y-hidden">
+<div class="sm:flex w-full overflow-y-hidden">
 	<button
 		class="sm:hidden absolute flex flex-col gap-1 top-10 left-10 z-10"
 		on:click={show_nav}
@@ -160,7 +160,7 @@
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
 	</button>
 	<nav
-		class="bg-[#000000] bg-opacity-10 backdrop-blur-xl border-r-[1px] border-r-white/[.11] border-opacity-10 sm:pt-12 sm:pb-12 sm:pl-2 sm:pr-2 h-full flex flex-col sm:gap-8 sm:justify-center sm:items-center sm:static absolute top-0 right-[1000px] sm:w-auto w-full z-10"
+		class="bg-[#000000] bg-opacity-10 backdrop-blur-xl border-r-[1px] border-r-white/[.11] border-opacity-10 sm:pl-2 sm:pr-2 h-[100dvh] flex flex-col sm:gap-8 sm:justify-center sm:items-center sm:static absolute top-0 right-[1000px] sm:w-auto w-full z-10"
 	>
 		<h2 class="sm:hidden p-5">mdgaziur001</h2>
 		<NavButton text="Home" on_click={() => on_nav(0)} is_selected={nav_button_status[0]}>
@@ -340,7 +340,7 @@
 		<div id="other-content-container" class="sticky top-0 backdrop-blur-xl">
 			<div
 				id="about"
-				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-28 flex flex-col items-center justify-center min-h-screen"
+				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-28 flex flex-col items-center sm:justify-center min-h-screen"
 			>
 				<h1 class="flex items-center gap-4">
 					<svg
@@ -374,7 +374,7 @@
 			</div>
 			<div
 				id="education"
-				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-7 flex flex-col items-center justify-center min-h-screen"
+				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-28 flex flex-col items-center sm:justify-center min-h-screen"
 			>
 				<h1 class="flex items-center gap-3">
 					<svg
@@ -412,7 +412,7 @@
 			</div>
 			<div
 				id="achievements"
-				class="border-t-[1px] border-white/[0.11] pt-7 sm:p-16 p-5 flex flex-col items-center justify-center min-h-screen"
+				class="border-t-[1px] border-white/[0.11] sm:p-16 pt-28 p-5 flex flex-col items-center sm:justify-center min-h-screen"
 			>
 				<h1 class="flex items-center gap-3">
 					<svg
@@ -449,7 +449,7 @@
 			</div>
 			<div
 				id="projects"
-				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-28 flex flex-col items-center justify-center min-h-screen"
+				class="border-t-[1px] border-white/[0.11] sm:p-16 p-5 pt-28 flex flex-col items-center sm:justify-center min-h-screen"
 			>
 				<h1 class="flex items-center gap-3">
 					<svg
