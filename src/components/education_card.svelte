@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="education-card flex flex-col w-full max-w-md sm:gap-5 gap-3 border-[1px] sm:p-10 p-5 bg-white/[0.02] rounded-xl border-white/[0.11] hover:bg-white/5 transition-colors"
+	class="education-card shadow-black/[0.25] shadow-lg flex flex-col w-full max-w-md sm:gap-5 gap-3 border-[1px] sm:p-10 p-5 bg-white/[0.02] rounded-xl border-white/[0.11] hover:bg-white/5 transition-colors"
 >
 	<h2>{insitution}</h2>
 	<div class="flex flex-col gap-1">

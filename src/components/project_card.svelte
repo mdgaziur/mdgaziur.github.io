@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class="project-card flex overflow-hidden w-full flex-col justify-between max-w-md sm:gap-5 gap-3 border-[1px] rounded-xl border-white/[0.11] bg-white/[0.02] hover:bg-white/5 transition-colors"
+	class="project-card shadow-black/[0.25] shadow-lg flex overflow-hidden w-full flex-col justify-between max-w-md sm:gap-5 gap-3 border-[1px] rounded-xl border-white/[0.11] bg-white/[0.02] hover:bg-white/5 transition-colors"
 >
 	<div class="flex flex-col sm:gap-5 gap-3 sm:p-10 p-7">
 		<h2>{repo} {wip ? '(WIP)' : ''}</h2>
