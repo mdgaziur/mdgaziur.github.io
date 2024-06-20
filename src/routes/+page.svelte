@@ -85,7 +85,7 @@
 				container: '#content',
 				viewFactor: 0.3,
 				duration: 1000,
-				origin: 'left',
+				origin: 'left'
 			}
 		);
 
