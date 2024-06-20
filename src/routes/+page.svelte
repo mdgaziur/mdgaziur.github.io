@@ -11,21 +11,22 @@
 	// I am so sorry!
 	let nav_button_status: boolean[] = [true, false, false, false, false];
 	let container: HTMLDivElement | null;
+	let should_move_container = false;
+	let is_closing = false;
+	let last_touch_pos = 0;
+	let is_nav_closed = true;
 
 	onMount(() => {
 		const nav = document.querySelector('nav');
-
-		let should_move_container = false;
-		let is_closing = false;
-		let last_touch_pos = 0;
 
 		window.addEventListener('touchstart', (e) => {
 			if (nav) {
 				nav.style.transition = '0ms';
 				last_touch_pos = e.touches[0].clientX;
+
 				should_move_container =
-					last_touch_pos >= (window.visualViewport?.width ?? 650) * 0.8 ||
-					last_touch_pos <= (window.visualViewport?.width ?? 650) * 0.2;
+					(last_touch_pos >= (window.visualViewport?.width ?? 650) * 0.8 && !is_nav_closed) ||
+					(last_touch_pos <= (window.visualViewport?.width ?? 650) * 0.2 && nav.style.right != "0px");
 			}
 		});
 
@@ -49,7 +50,9 @@
 
 				if (last_touch_pos <= viewport_size * viewport_percentage) {
 					nav.style.right = `${viewport_size * 1.2}px`;
+					is_nav_closed = true;
 				} else {
+					is_nav_closed = false;
 					nav.style.right = `0px`;
 				}
 				nav.style.transition = '300ms';
@@ -112,6 +115,15 @@
 		});
 	});
 
+	function show_nav() {
+		let nav = document.querySelector('nav');
+		if (nav) {
+			nav.style.transition = '300ms';
+			nav.style.right = '0px';
+			is_nav_closed = false;
+		}
+	}
+
 	function on_nav(nav_idx: number) {
 		if (container) {
 			let nav = document.querySelector('nav');
@@ -119,6 +131,7 @@
 				let viewport_size = window.visualViewport?.width ?? 650;
 				nav.style.transition = '300ms';
 				nav.style.right = `${viewport_size * 1.2}px`;
+				is_nav_closed = true;
 			}
 
 			let section = document.querySelector(sections[nav_idx]);
@@ -140,13 +153,7 @@
 <div class="sm:flex sm:h-screen w-full overflow-y-hidden">
 	<button
 		class="sm:hidden absolute flex flex-col gap-1 top-10 left-10 z-10"
-		on:click={() => {
-			let nav = document.querySelector('nav');
-			if (nav) {
-				nav.style.transition = '300ms';
-				nav.style.right = '0px';
-			}
-		}}
+		on:click={show_nav}
 	>
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
 		<span class="bg-[#AFD6F6] w-8 h-0.5"></span>
