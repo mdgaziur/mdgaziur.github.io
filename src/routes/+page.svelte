@@ -174,7 +174,7 @@
 	<nav
 		class="bg-[#000000] bg-opacity-10 backdrop-blur-xl border-r-[1px] border-r-white/[.11] border-opacity-10 sm:pl-2 sm:pr-2 h-[100dvh] flex flex-col sm:gap-8 sm:justify-center sm:items-center sm:static absolute top-0 right-[1000px] sm:w-auto w-full z-10"
 	>
-		<h2 class="sm:hidden p-5">mdgaziur001</h2>
+		<h2 class="sm:hidden p-5">mdgaziur</h2>
 		<NavButton text="Home" on_click={() => on_nav(0)} is_selected={nav_button_status[0]}>
 			<svg
 				width="32"

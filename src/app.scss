@@ -18,6 +18,27 @@ body {
 	@apply bg-white/5;
 }
 
+::-webkit-scrollbar {
+	@apply sm:w-[12px];
+	@apply w-[6px];
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-white/[0.11];
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c9e4fa;
+
+	&:hover {
+		background: #afd6f6;
+	}
+
+	&:active {
+		background: #81c7ff;
+	}
+}
+
 h1 {
 	font-family: 'Lexend', sans-serif;
 	font-weight: 600;
