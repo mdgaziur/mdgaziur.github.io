@@ -18,6 +18,133 @@
 	let is_nav_closed = true;
 
 	onMount(() => {
+		const preloader = document.querySelector(".preloader");
+		const preloader_bar = document.querySelector(".preloader-bar");
+
+		function init_scrollreveal() {
+
+			let scroll_reveal = ScrollReveal({ distance: '100px', origin: 'bottom' });
+
+			scroll_reveal.reveal('#home h1', {
+				container: '#content',
+				duration: 500,
+				origin: 'left'
+			});
+
+			scroll_reveal.reveal('#home h2', {
+				container: '#content',
+				delay: 100,
+				duration: 500,
+				origin: 'left'
+			});
+
+			document.querySelectorAll('.info-button').forEach((btn, idx) => {
+				scroll_reveal.reveal(btn, {
+					container: '#content',
+					delay: 100 * idx,
+					duration: 500,
+					scale: 0.2
+				});
+			});
+
+			scroll_reveal.reveal('#about h1, #education h1, #achievements h1, #skills h1, #projects h1', {
+				container: '#content',
+				viewFactor: 0.3,
+				duration: 1000,
+				origin: 'left'
+			});
+
+			scroll_reveal.reveal('#about img', {
+				container: '#content',
+				viewFactor: 0.3,
+				delay: 100,
+				duration: 500,
+				scale: 0.2
+			});
+
+			scroll_reveal.reveal('#about p', {
+				container: '#content',
+				viewFactor: 0.3,
+				delay: 200,
+				duration: 500,
+				scale: 0.2
+			});
+
+			document.querySelectorAll('.education-card')?.forEach((card, idx) => {
+				scroll_reveal.reveal(card, {
+					container: '#content',
+					viewFactor: 0.3,
+					delay: 100 * idx,
+					duration: 500,
+					scale: 0.2
+				});
+			});
+
+			document.querySelectorAll('.achievement-card')?.forEach((card, idx) => {
+				scroll_reveal.reveal(card, {
+					container: '#content',
+					viewFactor: 0.3,
+					delay: 100 * idx,
+					duration: 500,
+					scale: 0.2
+				});
+			});
+
+			document.querySelectorAll('.skill-card')?.forEach((card, idx) => {
+				scroll_reveal.reveal(card, {
+					container: '#content',
+					viewFactor: 0.3,
+					delay: 100 * idx,
+					duration: 500,
+					scale: 0.2
+				});
+			});
+
+			document.querySelectorAll('.project-card')?.forEach((card, idx) => {
+				scroll_reveal.reveal(card, {
+					container: '#content',
+					viewFactor: 0.3,
+					delay: 100 * idx,
+					duration: 500,
+					scale: 0.2
+				});
+			});
+		}
+
+		let progress = 0;
+		let hide_preloader = () => {
+			preloader_bar.style.width = `100%`;
+			setTimeout(() => {
+				init_scrollreveal();
+
+				setTimeout(() => {
+					preloader.style.opacity = "0";
+
+					setTimeout(() => {
+						preloader.style.display = "none";
+					}, 200);
+				}, 50);
+			}, 500);
+		}
+
+		const handle = setInterval(() => {
+			if (progress == 80) {
+				clearInterval(handle);
+
+				if (document.readyState == "complete") {
+					setTimeout(hide_preloader, 300);
+				} else {
+					document.onload = () => {
+						setTimeout(hide_preloader, 300);
+					};
+				}
+				return;
+			}
+
+			preloader_bar.style.width = `${progress}%`;
+			progress += 1;
+		}, 50);
+
 		const nav = document.querySelector('nav');
 
 		window.addEventListener('touchstart', (e) => {
@@ -76,97 +203,6 @@
 				}
 			});
 		});
-
-		let scroll_reveal = ScrollReveal({ distance: '100px', origin: 'bottom', reset: true });
-
-		scroll_reveal.reveal('#home h1', {
-			container: '#content',
-			delay: 100,
-			duration: 500,
-			origin: 'left',
-			viewOffset: {
-				top: -100,
-			}
-		});
-
-		scroll_reveal.reveal('#home h2', {
-			container: '#content',
-			delay: 200,
-			duration: 500,
-			origin: 'left'
-		});
-
-		document.querySelectorAll('.info-button').forEach((btn, idx) => {
-			scroll_reveal.reveal(btn, {
-				container: '#content',
-				delay: 100 * idx,
-				duration: 500,
-				scale: 0.2
-			});
-		});
-
-		scroll_reveal.reveal('#about h1, #education h1, #achievements h1, #skills h1, #projects h1', {
-			container: '#content',
-			viewFactor: 0.3,
-			duration: 1000,
-			origin: 'left'
-		});
-
-		scroll_reveal.reveal('#about img', {
-			container: '#content',
-			viewFactor: 0.3,
-			delay: 100,
-			duration: 500,
-			scale: 0.2
-		});
-
-		scroll_reveal.reveal('#about p', {
-			container: '#content',
-			viewFactor: 0.3,
-			delay: 200,
-			duration: 500,
-			scale: 0.2
-		});
-
-		document.querySelectorAll('.education-card')?.forEach((card, idx) => {
-			scroll_reveal.reveal(card, {
-				container: '#content',
-				viewFactor: 0.3,
-				delay: 100 * idx,
-				duration: 500,
-				scale: 0.2
-			});
-		});
-
-		document.querySelectorAll('.achievement-card')?.forEach((card, idx) => {
-			scroll_reveal.reveal(card, {
-				container: '#content',
-				viewFactor: 0.3,
-				delay: 100 * idx,
-				duration: 500,
-				scale: 0.2
-			});
-		});
-
-		document.querySelectorAll('.skill-card')?.forEach((card, idx) => {
-			scroll_reveal.reveal(card, {
-				container: '#content',
-				viewFactor: 0.3,
-				delay: 100 * idx,
-				duration: 500,
-				scale: 0.2
-			});
-		});
-
-		document.querySelectorAll('.project-card')?.forEach((card, idx) => {
-			scroll_reveal.reveal(card, {
-				container: '#content',
-				viewFactor: 0.3,
-				delay: 100 * idx,
-				duration: 500,
-				scale: 0.2
-			});
-		});
 	});
 
 	function show_nav() {
@@ -203,6 +239,13 @@
 		}
 	}
 </script>
+
+<div class="preloader transition-opacity absolute h-full w-full top-0 left-0 z-50 bg-[#03182b] flex flex-col gap-20 items-center justify-center">
+	<img class="w-52" src="https://avatars.githubusercontent.com/u/40351881" alt="avatar" />
+	<div class="md:w-72 w-52 h-2 bg-[rgb(8,43,75)] rounded-3xl">
+		<div class="preloader-bar h-2 w-0 bg-[rgb(17,90,157)] rounded-3xl transition-all"></div>
+	</div>
+</div>
 
 <div class="sm:flex w-full overflow-y-hidden">
 	<button class="sm:hidden absolute flex flex-col gap-1 top-10 left-10 z-10" on:click={show_nav}>
