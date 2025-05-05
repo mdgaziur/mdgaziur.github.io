@@ -504,16 +504,21 @@
 				</h1>
 				<div class="flex flex-wrap justify-center gap-10 p-10 pl-0 pr-0">
 					<EducationCard
-						insitution="Border Guard Public School and College, Sylhet"
-						description="PSC, JSC and SSC"
-						start="2014"
-						end="2022"
+						insitution="Shahjalal University of Science and Technology, Sylhet"
+						description="B.Sc(Engg) in Computer Science and Technology"
+						start="2025"
 					/>
 					<EducationCard
 						insitution="Jalalabad Cantonment Public School and College, Sylhet"
 						description="HSC"
 						start="2023"
 						end="2024"
+					/>
+					<EducationCard
+						insitution="Border Guard Public School and College, Sylhet"
+						description="PSC, JSC and SSC"
+						start="2014"
+						end="2022"
 					/>
 				</div>
 			</div>
