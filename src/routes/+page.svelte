@@ -132,10 +132,10 @@
 				clearInterval(handle);
 
 				if (document.readyState == "complete") {
-					setTimeout(hide_preloader, 300);
+					setTimeout(hide_preloader, 50);
 				} else {
 					document.onload = () => {
-						setTimeout(hide_preloader, 300);
+						setTimeout(hide_preloader, 50);
 					};
 				}
 				return;
@@ -143,7 +143,7 @@
 
 			preloader_bar.style.width = `${progress}%`;
 			progress += 1;
-		}, 50);
+		}, 5);
 
 		const nav = document.querySelector('nav');
 
@@ -242,8 +242,8 @@
 
 <div class="preloader transition-opacity absolute h-full w-full top-0 left-0 z-50 bg-[#03182b] flex flex-col gap-20 items-center justify-center">
 	<img class="w-52" src="https://avatars.githubusercontent.com/u/40351881" alt="avatar" />
-	<div class="md:w-72 w-52 h-2 bg-[rgb(8,43,75)] rounded-3xl">
-		<div class="preloader-bar h-2 w-0 bg-[rgb(17,90,157)] rounded-3xl transition-all"></div>
+	<div class="md:w-72 w-52 h-2 bg-[rgb(8,43,75)] rounded-3xl overflow-hidden border-[0.5px] border-[#0b3963]">
+		<div class="preloader-bar h-2 w-0 bg-[rgb(17,90,157)] transition-all"></div>
 	</div>
 </div>
 
