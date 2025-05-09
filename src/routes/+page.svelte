@@ -128,16 +128,13 @@
 		};
 
 		const handle = setInterval(() => {
-			if (progress == 80) {
-				clearInterval(handle);
-
+			if (progress >= 80) {
 				if (document.readyState == 'complete') {
+					preloader_bar.style.width = `100%`;
 					setTimeout(hide_preloader, 50);
-				} else {
-					document.onload = () => {
-						setTimeout(hide_preloader, 50);
-					};
+					clearInterval(handle);
 				}
+
 				return;
 			}
 
