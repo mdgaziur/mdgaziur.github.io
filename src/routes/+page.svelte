@@ -504,7 +504,7 @@
 				</h1>
 				<div class="flex flex-wrap justify-center gap-10 p-10 pl-0 pr-0">
 					<EducationCard
-						description="B.Sc(Engg) in Computer Science and Technology"
+						description="B.Sc(Engg) in Computer Science and Engineering"
 						insitution="Shahjalal University of Science and Technology, Sylhet"
 						start="2025"
 					/>
