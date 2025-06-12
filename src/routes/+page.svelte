@@ -239,7 +239,7 @@
 
 <div
 	class="preloader transition-opacity absolute h-full w-full top-0 left-0 z-50 bg-[#03182b] flex flex-col gap-20 items-center justify-center">
-	<img alt="avatar" class="w-52" src="https://avatars.githubusercontent.com/u/40351881" />
+	<h2>Loading...</h2>
 	<div class="md:w-72 w-52 h-2 bg-[rgb(8,43,75)] rounded-3xl overflow-hidden border-[0.5px] border-[#0b3963]">
 		<div class="preloader-bar h-2 w-0 bg-[rgb(17,90,157)] transition-all"></div>
 	</div>
