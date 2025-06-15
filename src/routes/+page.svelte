@@ -464,14 +464,12 @@
 					</svg>
 					About
 				</h1>
-				<div class="flex flex-col items-center gap-10 p-10 pl-0 pr-0 max-w-lg">
+				<div class="flex lg:justify-start justify-center flex-wrap items-start gap-10 p-10 pl-0 pr-0 sm:max-w-2xl max-w-lg">
+					<img alt="avatar" class="sm:w-52 w-56 rounded-lg" src="https://avatars.githubusercontent.com/u/40351881" />
 					<div>
-						<img alt="avatar" class="w-52" src="https://avatars.githubusercontent.com/u/40351881" />
-					</div>
-					<div>
-						<p class="text-xl sm:p-0 p-5">
+						<p class="text-xl max-w-96 sm:p-0 p-5 w-full">
 							I am <b>MD Gaziur Rahman Noor</b>, a student and a programmer from Bangladesh. I’ve
-							been making stuff since 2017. I’m interested in making stuff and peeking into the low
+							been making stuff since 2017. I’m interested in peeking into the low
 							level details of computer and software. I’ve been tinkering with Assembly, compilers
 							and kernels to know more about how these things work. Besides creating stuff,
 							mathematics and physics are what I like the most.
