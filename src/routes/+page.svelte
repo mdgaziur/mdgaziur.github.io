@@ -413,7 +413,7 @@
 							/>
 						</svg>
 					</InfoButton>
-					<InfoButton link="https://twitter.com/mdgaziur001">
+					<InfoButton link="https://twitter.com/mdgaziur_">
 						<svg
 							fill="none"
 							height="41"
